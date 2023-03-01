@@ -13,16 +13,14 @@ header {
 }
 
 header .titulo p {
-    font-family: 'Crayonest';
-    font-style: normal;
-    font-weight: 100;
+font-family: 'Anton', sans-serif;
+font-family: 'Carter One', cursive;
 }
 
 nav h1,
 nav p {
-    font-family: 'Crayonest';
-    font-style: normal;
-    font-weight: 100;
+font-family: 'Anton', sans-serif;
+font-family: 'Carter One', cursive;
 }
 
 
@@ -48,9 +46,9 @@ main {
 
 label {
 
-    font-family: 'Magic School One';
+    font-family: 'Cinzel Decorative', cursive;
     color: #3d291a;
-    font-size: 40px;
+    font-size: 30px;
     -webkit-text-stroke: #22150B solid 2px;
 
 }
@@ -204,9 +202,8 @@ footer {
 
 footer p,
 footer a {
-    font-family: 'Crayonest';
-    font-style: normal;
-    font-weight: 100;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Carter One', cursive;
 }
 
 @media screen and (max-width: 640px) {
