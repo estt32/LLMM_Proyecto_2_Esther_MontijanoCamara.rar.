@@ -1,0 +1,451 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'Crayonest';
+    font-weight: 400;
+}
+
+/* CUERPO */
+body {
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    background-color: black;
+
+}
+
+/* HEADER  */
+header {
+    width: 100%;
+}
+
+header p {
+    padding-bottom: 1%;
+}
+
+header a {
+    text-decoration: none;
+    color: #54A9BB;
+}
+
+header a:hover {
+    transform: scale(0.95);
+    text-decoration: none;
+    color: #54A9BB;
+}
+
+
+header .titulo img {
+    width: 60px;
+    height: 60%;
+}
+
+nav img {
+    width: 100px;
+    height: 30px;
+}
+
+/* animacion de texto */
+.frikando {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    color: #54A9BB;
+}
+
+.frikando span {
+    display: inline-block;
+    position: relative;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+.frikando span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    /* duracion */
+    animation: stretch 0.5s ease-in-out infinite;
+}
+
+/* cada uno tiene un tiempo diferente para hacer un efecto de ola */
+
+.frikando span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.frikando span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.frikando span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.frikando span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.frikando span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.frikando span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.frikando span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.frikando span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+/* hacemos la animacion */
+
+@keyframes bounce {
+    /* empieza en y=0 y va bajando hasta y=-10 y luego vuelve a subir a y=0 */
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* CUERPO */
+
+main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+}
+
+/* FOOTER */
+
+footer {
+    grid-row: 3/4;
+    position: relative;
+    margin-top: 20%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 50px;
+    background-color: black;
+}
+
+footer p {
+
+    color: #54A9BB;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* LISTA */
+/* para poner una animación en las letras */
+
+ul {
+    grid-column: 3/4;
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 1%;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+
+}
+
+ul li a {
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #54A9BB;
+
+}
+
+ul li a::before {
+    position: absolute;
+
+    content: attr(data-text);
+    /* --clr es para la sombra, hace un efecto neon en las letras */
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    border-right: 2px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+
+ul li a:hover {
+    text-decoration: none;
+    color: transparent;
+}
+
+ul li a:hover::before {
+    width: 100%;
+    filter: drop-shadow(0 0 10px var(--clr));
+}
+
+
+@media screen and (max-width: 640px) {
+
+    /* TITULO */
+
+
+    header {
+        grid-row: 1/2;
+    }
+
+    footer {
+        margin-top: 70%;
+        grid-row: 3/4;
+    }
+
+    header .titulo {
+        height: 55px;
+        background-color: #003F4C;
+        font-size: 50px;
+        color: #54A9BB;
+        display: grid;
+        grid-template-columns: 15% 80%;
+    }
+
+    /* MENU */
+    header nav {
+
+        color: white;
+        display: grid;
+        justify-items: end;
+        background-color: #003F4C;
+    }
+
+    .menu {
+        grid-template-columns: 70% 30%;
+        z-index: 9999999999;
+        width: 100%;
+        height: 50px;
+        background-color: #54A9BB;
+        --bs-bg-opacity: 0.5;
+        box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.526);
+    }
+
+    .ml-auto {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        margin-right: 38px;
+        background-color: #54A9BB;
+        box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.526);
+        width: 180px;
+    }
+
+    nav button {
+        width: 300px;
+    }
+
+    .navbar-toggler {
+        grid-row: 2/3;
+        overflow: hidden;
+        margin-left: 50.5%;
+        border: none;
+
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+    }
+
+    .nav-link {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+
+        border-bottom: #4a92a0 solid 1px;
+
+    }
+
+    nav button:active {
+        transform: scale(0.9);
+        box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.263);
+        border: none;
+    }
+
+    /* animacion */
+
+    .frikando{
+        font-size: 150px;
+    }
+
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+    header .titulo {
+        height: 55px;
+        background-color: #003F4C;
+        font-size: 50px;
+        color: #54A9BB;
+        display: grid;
+        grid-template-columns: 8% 80%;
+    }
+
+
+
+    /* MENU */
+    header nav {
+
+        color: white;
+        display: grid;
+        justify-items: end;
+        background-color: #003F4C;
+    }
+
+    .menu {
+        grid-template-columns: 70% 30%;
+        z-index: 9999999999;
+        width: 100%;
+        height: 50px;
+        background-color: #54A9BB;
+        --bs-bg-opacity: 0.5;
+        box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.526);
+    }
+
+    .ml-auto {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        margin-right: 38px;
+
+
+        background-color: #54A9BB;
+        box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.526);
+        width: 180px;
+    }
+
+    nav button {
+        width: 300px;
+    }
+
+    .navbar-toggler {
+        grid-row: 2/3;
+        overflow: hidden;
+        margin-left: 65.5%;
+        border: none;
+
+    }
+
+    .navbar-toggler:focus {
+        outline: none;
+
+    }
+
+    .nav-link {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+
+        border-bottom: #4a92a0 solid 1px;
+
+    }
+
+
+    nav h1:hover {
+        -webkit-text-stroke: 1px var(--clr);
+        text-decoration: none;
+        color: transparent;
+    }
+
+    nav button:active {
+        transform: scale(0.9);
+        box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.263);
+        border: none;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1000px) {
+    header .titulo {
+        height: 55px;
+        background-color: #003F4C;
+        font-size: 50px;
+        color: #54A9BB;
+        display: grid;
+        grid-template-columns: 8% 80%;
+    }
+
+    /* MENU */
+    header nav {
+        background-color: #54A9BB;
+        color: white;
+        text-align: end;
+        padding-right: 1%;
+    }
+
+    nav button {
+        width: 300px;
+    }
+
+
+
+    nav h1:hover {
+
+        -webkit-text-stroke: 1px var(--clr);
+        text-decoration: none;
+        color: transparent;
+    }
+
+    nav button:active {
+        transform: scale(0.9);
+        box-shadow: inset 0px 8px 10px rgba(0, 0, 0, 0.263);
+        border: none;
+    }
+
+
+
+}
+
+button {
+    border: none;
+    background: none;
+
+}
+
+
+/* BARRA PARA DESLIZAR */
+
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+
+}
+
+body::-webkit-scrollbar-track {
+    background: #00262f;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #003F4C;
+    border-radius: 20px;
+}

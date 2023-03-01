@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="inicio_sa.css">
+    <link rel="stylesheet" href="historia_sa.css">
+    <title>Harry Potter - HISTORIA</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <img src="img/icono_general.png" alt="icono FRIKANDO">
+            <a href="index.html" title="Ir al inicio">
+                <p>FRIKANDO</p>
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark menu">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <p> <img src="img/icono_menu_hp.png" alt="menu"> MENU</p>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="inicio_sa.html" style="--clr:#00262f">
+                                    <h1>INICIO</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="localizaciones_sa.html" style="--clr:#00262f">
+                                    <h1>LOCALIZACIÓN</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="#" style="--clr:#00262f">
+                                    <h1>HISTORIA</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="productos_sa.html" style="--clr:#00262f">
+                                    <h1>PRODUCTOS</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="musica_sa.html" style="--clr:#00262f">
+                                    <h1>MÚSICA</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="foro">
+                                <a class="nav-link" href="registro.html" style="--clr:#00262f">
+                                    <h1>Registrarse</h1>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="titulos">
+
+            <p>Señor de los Anillos</p>
+
+        </div>
+    </header>
+    <main>
+        <article class="libros">
+            <div class="tipo">
+
+                <img class="iconoUno" src="img/libros/icono_libro.png">
+                <p>Libros</p>
+                <img class="iconoDos" src="img/libros/icono_libro.png">
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS LIBROS OFICIALES-->
+
+                <button onclick="mostrarElementos('grupo0')">
+                    <h2>Oficiales</h2>
+                </button>
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS ESTUCHES DE LIBROS-->
+
+                <button onclick="mostrarElementos('grupo1')">
+                    <h2>Estuches / Pack</h2>
+                </button>
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LAS EDICIONES ESPECIALES-->
+
+                <button class="largo" onclick="mostrarElementos('grupo2')">
+                    <h2>Tapa Blanda</h2>
+                </button>
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS LIBROS EXTRAS-->
+
+                <button onclick="mostrarElementos('grupo4')">
+                    <h2>Extras</h2>
+                </button>
+
+            </div>
+            <div class="portadas">
+
+                <!-- GRUPO PARA LOS LIBROS OFICIALES -->
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-n-0103-la-comunidad-del-anillo-ne/9788445009598/12816135"
+                    target="_blank"><img src="img/libros/tapaDura/la comunidad del anillo.jpg"
+                        alt="la comunidad del anillo" title="LA COMUNIDAD DEL ANILLO"></a>
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-n-0203-las-dos-torres-ne/9788445009604/12816136"
+                    target="_blank">
+                    <img src="img/libros/tapaDura/LAS DOS TORRES.jpg" alt="LAS DOS TORRES" title="LAS DOS TORRES"></a>
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-n-0303-el-retorno-del-rey-ne/9788445009611/12958330"
+                    target="_blank"><img src="img/libros/tapaDura/EL RETORNO DEL REY.jpg" alt="EL RETORNO DEL REY"
+                        title="EL RETORNO DEL REY"></a>
+
+                <a class="grupo0" href="https://www.casadellibro.com/libro-el-hobbit-ne/9788445012802/12731419"
+                    target="_blank"><img src="img/libros/tapaDura/EL HOBBIT.jpg" alt="EL HOBBIT" title="EL HOBBIT"></a>
+
+                <a class="grupo0" href="https://www.casadellibro.com/libro-el-silmarillion-ne/9788445012796/12781029"
+                    target="_blank"><img src="img/libros/tapaDura/EL SILMARILLION.jpg" alt="EL SILMARILLION "
+                        title="EL SILMARILLION "></a>
+
+                <!--GRUPO PARA ESTUCHES -->
+
+                <a class="grupo1" style="display:none;"
+                    href="https://www.casadellibro.com/libro-estuche-tolkien/9788445013830/13083950"
+                    target="_blank"><img src="img/libros/ESTUCHE TOLKIEN.png" alt="ESTUCHE TOLKIEN"
+                        title="ESTUCHE TOLKIEN"></a>
+
+                <a class="grupo1" style="display:none;"
+                    href="https://www.casadellibro.com/libro-estuche-tolkien-el-hobbit--el-senor-de-los-anillos/9788445013359/13194286"
+                    target="_blank">
+                    <img src="img/libros/ESTUCHE TOLKIEN (EL HOBBIT + EL SEÑOR DE LOS ANILLOS).png"
+                        alt="ESTUCHE TOLKIEN (EL HOBBIT + EL SEÑOR DE LOS ANILLOS)"
+                        title="ESTUCHE TOLKIEN (EL HOBBIT + EL SEÑOR DE LOS ANILLOS)"></a>
+
+                <a class="grupo1" style="display:none;"
+                    href="https://www.casadellibro.com/libro-pack-trilogia-el-senor-de-los-anillos/9788445013847/13083951"
+                    target="_blank">
+                    <img src="img/libros/PACK TRILOGÍA EL SEÑOR DE LOS ANILLOS.png"
+                        alt="PACK TRILOGÍA EL SEÑOR DE LOS ANILLOS" title="PACK TRILOGÍA EL SEÑOR DE LOS ANILLOS"></a>
+
+
+
+                <!-- GRUPO PARA LAS EDICIONES DE TAPA BLANDA -->
+
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-1-la-comunidad-del-anillo/9788445013953/13083953"
+                    target="_blank"><img src="img/libros/tapaBlanda/LA COMUNIDAD DEL ANILLO.jpg"
+                        alt="LA COMUNIDAD DEL ANILLO" title="LA COMUNIDAD DEL ANILLO"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-2-las-dos-torres/9788445013960/13083954"
+                    target="_blank"><img src="img/libros/tapaBlanda/LAS DOS TORRES.jpg" alt="LAS DOS TORRES"
+                        title="LAS DOS TORRES"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-3-el-retorno-del-rey/9788445013977/13083955"
+                    target="_blank"><img src="img/libros/tapaBlanda/EL RETORNO DEL REY.jpg" alt="EL RETORNO DEL REY"
+                        title="EL RETORNO DEL REY"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-el-hobbit/9788445013946/13083952" target="_blank"><img
+                        src="img/libros/tapaBlanda/EL HOBBIT.jpg" alt="EL HOBBIT" title="EL HOBBIT"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-el-silmarillion/9788445013984/13083956"
+                    target="_blank"><img src="img/libros/tapaBlanda/EL SILMARILLION.jpg" alt="EL SILMARILLION"
+                        title="EL SILMARILLION"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-cuentos-inconclusos/9788445004326/4804851"
+                    target="_blank"><img src="img/libros/tapaBlanda/CUENTOS INCONCLUSOS.jpg" alt="CUENTOS INCONCLUSOS"
+                        title="CUENTOS INCONCLUSOS"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-la-caida-de-gondolin/9788445010471/12276159"
+                    target="_blank"><img src="img/libros/tapaBlanda/LA CAIDA DE GONDOLIN.jpg" alt="LA CAIDA DE GONDOLIN"
+                        title="LA CAIDA DE GONDOLIN"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-beren-y-luthien/9788445009079/11405195"
+                    target="_blank"><img src="img/libros/tapaBlanda/BEREN Y LÚTHIEN.jpg" alt="BEREN Y LÚTHIEN"
+                        title="BEREN Y LÚTHIEN"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-cuentos-desde-el-reino-peligroso/9788445077870/1799960"
+                    target="_blank"><img src="img/libros/tapaBlanda/CUENTOS DESDE EL REINO PELIGROSO.jpg"
+                        alt="CUENTOS DESDE EL REINO PELIGROSO" title="CUENTOS DESDE EL REINO PELIGROSO"></a>
+
+
+
+                <!-- GRUPO PARA  LIBROS EXTRAS -->
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-los-hobbits-de-tolkien/9788445010389/12781021"
+                    target="_blank"><img src="img/libros/tapaBlanda/LOS HOBBITS DE TOLKIEN.jpg"
+                        alt="LOS HOBBITS DE TOLKIEN" title="LOS HOBBITS DE TOLKIEN"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-poderes-oscuros-de-tolkien/9788445010396/12731413"
+                    target="_blank"><img src="img/libros/PODERES OSCUROS DE TOLKIEN.jpg"
+                        alt="PODERES OSCUROS DE TOLKIEN" title="PODERES OSCUROS DE TOLKIEN"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-un-atlas-de-tolkien/9788445010419/12655998"
+                    target="_blank"><img src="img/libros/UN ATLAS DE TOLKIEN.jpg" alt="UN ATLAS DE TOLKIEN"
+                        title="UN ATLAS DE TOLKIEN"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-el-mundo-ilustrado-de-tolkien/9788445010372/12628140"
+                    target="_blank"><img src="img/libros/EL MUNDO ILUSTRADO DE TOLKIEN.jpg"
+                        alt="EL MUNDO ILUSTRADO DE TOLKIEN" title="EL MUNDO ILUSTRADO DE TOLKIEN"></a>
+
+
+
+            </div>
+        </article>
+        <article class="peliculas">
+            <div class="tipo">
+
+                <img class="iconoUno" src="img/libros/peli/icono_pelicula.png">
+                <p>Películas</p>
+                <img class="iconoDos" src="img/libros/peli/icono_pelicula.png">
+
+                <!-- BOTÓN PARA OCULTAR O MOSTRAR LAS PELÍCULAS OFICIALES-->
+
+                <button class="of_2" onclick="mostrarElementos('grupo5')">
+                    <h2>Oficiales</h2>
+                </button>
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS DVD-->
+
+                <button class="dvd" onclick="mostrarElementos('grupo6')">
+                    <h2>DVD</h2>
+                </button>
+            </div>
+            <div class="portadas">
+
+                <!-- GRUPO PARA TODAS LAS PELÍCULAS OFICIALES DE LA SAGA PRINCIPAL -->
+
+                <a class="grupo5" href="peli1_sa.html" target="_blank"><img
+                        src="img/libros/peli/la comunidad del anillo.jpg" alt="la comunidad del anillo" title="la comunidad del anillo"></a>
+
+                <a class="grupo5" href="peli2_sa.html" target="_blank">
+                    <img src="img/libros/peli/las dos torres.jpg" alt="las dos torres" title="las dos torres"></a>
+
+                <a class="grupo5" href="peli3_sa.html" target="_blank"><img
+                        src="img/libros/peli/el retorno del rey.jpg" alt="el retorno del rey" title="el retorno del rey"></a>
+
+
+                <!-- GRUPO PARA LOS DVD -->
+
+                <a class="grupo6" style="display:none;"
+                    href="https://www.amazon.es/Trilog%C3%ADa-Se%C3%B1or-Los-Anillos-DVD/dp/B00B0W2EYC"
+                    target="_blank"><img src="img/libros/peli/dvd_trilogia_sa.jpg"
+                        alt="Trilogia El Señor De Los Anillos (Ed. Cinematografica) [DVD]"
+                        title="Trilogia El Señor De Los Anillos (Ed. Cinematografica) [DVD]"></a>
+
+                <a class="grupo6" style="display:none;"
+                    href="https://www.amazon.es/Trilog%C3%ADa-El-Hobbit-Edici%C3%B3n-extendida/dp/B093MQL4NX/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=24RD1HPT81VY9&keywords=trilogia+del+hobbit+dvd&qid=1677687270&s=dvd&sprefix=trilogia+del+hobbit+dvd%2Cdvd%2C142&sr=1-1"
+                    target="_blank"><img src="img/libros/peli/dvd_trilogia_hobbit_sa.png"
+                        alt="Trilogía El Hobbit - Edición extendida [DVD]"
+                        title="Trilogía El Hobbit - Edición extendida [DVD]"></a>
+
+
+            </div>
+        </article>
+        <article class="comics">
+            <div class="tipo largo">
+                <img class="iconoUno" src="img/libros/comic/icono_comic.png">
+                <p>Versiones Ilustradas / Comics</p>
+                <img class="iconoDos" src="img/libros/comic/icono_comic.png">
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LAS EDICIONES ILUSTRADAS-->
+
+                <button class="of_3" onclick="mostrarElementos('grupo7')">
+                    <h2>Oficiales</h2>
+                </button>
+
+            </div>
+            <div class="portadas">
+
+                <a class="grupo7"
+                    href="https://www.casadellibro.com/libro-el-senor-de-los-anillos-ne-ilustrado-por-alan-lee/9788445011119/13022033"
+                    target="_blank"><img src="img/libros/comic/EL SEÑOR DE LOS ANILLOS.jpg"
+                        alt="EL SEÑOR DE LOS ANILLOS" title="EL SEÑOR DE LOS ANILLOS"></a>
+
+                <a class="grupo7" href="https://www.casadellibro.com/libro-el-hobbit-ilustrado/9788445005903/9030339"
+                    target="_blank"><img src="img/libros/comic/EL HOBBIT ILUSTRADO.jpg" alt="EL HOBBIT ILUSTRADO"
+                        title="EL HOBBIT ILUSTRADO"></a>
+
+                <a class="grupo7"
+                    href="https://www.casadellibro.com/libro-el-silmarillion-ilustrado-por-ted-nasmith/9788445007716/9789506"
+                    target="_blank"><img src="img/libros/comic/EL SILMARILLION.jpg" alt="EL SILMARILLION"
+                        title="EL SILMARILLION"></a>
+
+                <a class="grupo7" href="https://www.casadellibro.com/libro-cuentos-inconclusos/9788445008157/11737692"
+                    target="_blank"><img src="img/libros/comic/CUENTOS INCONCLUSOS.jpg" alt="CUENTOS INCONCLUSOS"
+                        title="CUENTOS INCONCLUSOS"></a>
+
+                <a class="grupo7" href="https://www.casadellibro.com/libro-los-hijos-de-hurin/9788445006498/10045402"
+                    target="_blank"><img src="img/libros/comic/LOS HIJOS DE HURIN.jpg" alt="LOS HIJOS DE HURIN"
+                        title="LOS HIJOS DE HURIN"></a>
+
+                <a class="grupo7" href="https://www.casadellibro.com/libro-la-caida-de-gondolin/9788445006092/9027239"
+                    target="_blank"><img src="img/libros/comic/LA CAIDA DE GONDOLIN.jpg" alt="LA CAIDA DE GONDOLIN"
+                        title="LA CAIDA DE GONDOLIN"></a>
+
+                <a class="grupo7" href="https://www.casadellibro.com/libro-beren-y-luthien/9788445005064/6178441"
+                    target="_blank"><img src="img/libros/comic/BEREN Y LUTHIEN.jpg" alt="BEREN Y LUTHIEN"
+                        title="BEREN Y LUTHIEN"></a>
+
+
+
+
+
+            </div>
+        </article>
+    </main>
+    <footer>
+        <a href="aviso_legal.html">
+            <p>Aviso Legal</p>
+        </a>
+        <a href="registro.html">
+            <p>iniciar sesion</p>
+        </a>
+        <ul>
+            <li style="--clr:#914EFF">
+                <a href="inicio_hp.html" data-text="&nbsp;HarryPotter">&nbsp;Harry Potter&nbsp;</a>
+            </li>
+            <li style="--clr:#93DDA5">
+                <a href="inicio_sa.html" data-text="&nbsp;SeñorDeLosAnillos">&nbsp;Señor de los anillos&nbsp;</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+
+        function mostrarElementos(clase) {
+            var elementos = document.getElementsByClassName(clase);
+
+            // Ocultar todos los elementos que no pertenecen al grupo actual
+            var todosLosElementos = document.querySelectorAll('[class*=grupo]');
+            for (var i = 0; i < todosLosElementos.length; i++) {
+                if (!todosLosElementos[i].classList.contains(clase)) {
+                    todosLosElementos[i].style.display = "none";
+                }
+            }
+
+            // Mostrar u ocultar los elementos del grupo actual
+            for (var i = 0; i < elementos.length; i++) {
+                if (elementos[i].style.display === "none") {
+                    elementos[i].style.display = "block";
+                } else {
+                    elementos[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

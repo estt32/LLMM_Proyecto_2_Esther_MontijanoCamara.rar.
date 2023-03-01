@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    background-color: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 95%;
+    justify-items: center;
+    margin: 5px;
+}
+
+main h1 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    color: #253529;
+    -webkit-text-stroke: #253529 solid 2px;
+}
+
+.cosas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+article button {
+
+    margin: 10px;
+    height: 50px;
+    width: 120px;
+    font-size: 30px;
+    border: #253529 solid 1px;
+}
+
+/* botón que te lleva a la página web de donde he sacado los productos */
+
+.verMas {
+    margin-top: 20px;
+}
+
+.verMas a,
+.boton p {
+    text-align: center;
+    text-decoration: none;
+    color: #253529;
+}
+
+button:hover {
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.414), inset -4px -4px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.verMas button a:hover {
+    text-decoration: none;
+    color: #253529;
+}
+
+.boton {
+
+    grid-row: 2/3;
+    height: 55px;
+    border: #253529 1px solid;
+    border-radius: 20%;
+}
+
+
+.boton:active {
+    transform: rotate(10deg);
+}
+
+.boton:hover p {
+    color: #D8D3C8;
+}
+
+.boton:hover {
+
+    background-color: #253529;
+}
+
+.titulo {
+    font-family: 'Ringbearer';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #253529;
+    font-weight: 300;
+    text-align: left;
+    text-shadow: -4px -4px 10px #D8D3C88d, 4px 4px 10px #D8D3C85e;
+}
+
+
+.sub {
+    font-size: 20px;
+    text-shadow: none;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+input {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 700;
+}
+
+.buscador {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-size: 18px;
+    color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url(img/icono_buscador_varita.png);
+    background-color: #D8D3C8b3;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    background-position: center;
+}
+
+.buscador:hover {
+    border: 1px solid #253529;
+}
+
+.buscador:focus {
+    width: 300px;
+    height: 30px;
+    cursor: text;
+    padding-left: 40px;
+    color: #4c3320;
+    outline: none;
+    background-color: transparent;
+    border: 2px solid #253529;
+    border-radius: 2%;
+    background-color: transparent;
+    background-size: 22px;
+    background-position: 10px 50%;
+}
+
+/* PRODUCTOS */
+
+.fondosProducto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.414), inset -4px -4px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    height: 240px;
+    background-color: none;
+
+}
+
+.producto {
+    grid-row: 1/2;
+    height: 180px;
+    /* overflow-x: scroll; */
+
+}
+
+.descripcion {
+    padding: 10px;
+    color: #D8D3C8;
+    display: grid;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.414), inset -4px -4px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    height: 60px;
+    background-color: #253529b4;
+
+}
+
+/* PRODUCTOS */
+
+.fondosProducto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.414), inset -4px -4px 10px rgba(0, 0, 0, 0.25);
+
+    text-align: center;
+    height: 240px;
+    background-color: #253529b4;
+
+}
+
+.producto {
+    grid-row: 1/2;
+
+    height: 180px;
+
+}
+
+.descripcion {
+    margin-top: 12px;
+    color: #D8D3C8;
+    display: grid;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.414), inset -4px -4px 10px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    height: 60px;
+    background-color: #253529b4;
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    body {
+        display: grid;
+        grid-template-rows: 4.5% 89.5% 5%;
+        gap: 5px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 97%;
+        justify-items: center;
+        margin: 5px;
+    }
+
+
+    .cosas {
+        justify-content: center;
+    }
+
+    article {
+        text-align: center;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1000px) {
+    /* CUERPO */
+
+    body {
+        display: grid;
+        grid-template-rows: 8% 89% 5%;
+        gap: 10px;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* CUERPO */
+
+    body {
+        display: grid;
+        grid-template-rows: 14% 81% 5%;
+        gap: 10px;
+    }
+
+
+
+
+}

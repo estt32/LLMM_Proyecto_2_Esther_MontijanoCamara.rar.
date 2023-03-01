@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="inicio_hp.css">
+    <link rel="stylesheet" href="historia_hp.css">
+    <title>Harry Potter - HISTORIA</title>
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+             <img src="img/icono_general.png" alt="icono FRIKANDO">
+            <a href="index.html" title="Ir al inicio">
+                <p>FRIKANDO</p>
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark menu">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <p> <img src="img/icono_menu_hp.png" alt="menu"> MENU</p>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="inicio_hp.html" style="--clr:#00262f">
+                                    <h1>INICIO</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="localizaciones_hp.html" style="--clr:#00262f">
+                                    <h1>LOCALIZACIÓN</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="#" style="--clr:#00262f">
+                                    <h1>HISTORIA</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="productos_hp.html" style="--clr:#00262f">
+                                    <h1>PRODUCTOS</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button>
+                                <a class="nav-link" href="musica_hp.html" style="--clr:#00262f">
+                                    <h1>MÚSICA</h1>
+                                </a>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="foro">
+                                <a class="nav-link" href="inicio_hp.html" style="--clr:#00262f">
+                                    <h1>FORO</h1>
+                                </a>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="titulos">
+            <img src="img/varita.png">
+            <p>Harry Potter</p>
+            <img src="img/varita.png" class="alreves">
+        </div>
+    </header>
+    <main>
+        <article class="libros">
+            <div class="tipo">
+
+                <img class="iconoUno" src="img/libros/icono_libro.png">
+                <p>Libros</p>
+                <img class="iconoDos" src="img/libros/icono_libro.png">
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS LIBROS OFICIALES-->
+
+                <button onclick="mostrarElementos('grupo0')">
+                    <h2>Oficiales</h2>
+                </button>
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS ESTUCHES DE LIBROS-->
+
+                <button onclick="mostrarElementos('grupo1')">
+                    <h2>Estuches</h2>
+                </button>
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LAS EDICIONES ESPECIALES-->
+
+                <button class="largo" onclick="mostrarElementos('grupo2')">
+                    <h2>Ediciones Especiales</h2>
+                </button>
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS LIBROS DE ANIMALES FANTÁSTICOS-->
+
+                <button class="largoDos" onclick="mostrarElementos('grupo3')">
+                    <h2>Animales Fantásticos</h2>
+                </button>
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS LIBROS EXTRAS-->
+
+                <button onclick="mostrarElementos('grupo4')">
+                    <h2>Extras</h2>
+                </button>
+
+            </div>
+            <div class="portadas">
+
+                <!-- GRUPO PARA LOS LIBROS OFICIALES -->
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-la-piedra-filosofal/9788478884452/644736"
+                    target="_blank"><img src="img/libros/tapaDura/piedra_filosofal.jpg" alt="piedra_filosofal"
+                        title="Harry Potter y la Piedra Filosofal"></a>
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-la-camara-secreta/9788478884957/670541"
+                    target="_blank">
+                    <img src="img/libros/tapaDura/camara_secreta.jpg" alt="camara_secreta"
+                        title="Harry Potter y la Cámara Secreta"></a>
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-el-prisionero-de-azkaban/9788478885190/701683"
+                    target="_blank"><img src="img/libros/tapaDura/prisionero_de_azkban.jpg" alt="prisionero_de_azkban"
+                        title="Harry Potter y el Prisionero de Azkaban"></a>
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-el-caliz-de-fuego/9788478886456/752087"
+                    target="_blank"><img src="img/libros/tapaDura/caliz_de_fuego.jpg" alt="caliz_de_fuego"
+                        title="Harry Potter y el Cáliz de Fuego"></a>
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-la-orden-del-fenix/9788478887422/942080"
+                    target="_blank"><img src="img/libros/tapaDura/orden_del_fenix.jpg"
+                        alt="libro-harry-potter-y-la-orden-del-fenix" title="Harry Potter y la Orden del Fénix"></a>
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-el-misterio-del-principe/9788478889907/1065971"
+                    target="_blank"><img src="img/libros/tapaDura/misterio_del_principe.jpg" alt="misterio_del_principe"
+                        title="Harry Potter y el Misterio del Príncipe"></a>
+
+                <a class="grupo0"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-las-reliquias-de-la-muerte/9788498381405/1174305"
+                    target="_blank"><img src="img/libros/tapaDura/reliquias_de_la_muerte.jpg"
+                        alt="reliquias_de_la_muerte" title="Harry Potter y las Reliquias de la Muerte"></a>
+
+
+
+                <a class="grupo1" style="display:none;"
+                    href="https://www.casadellibro.com/libro-estuche-harry-potter/9788418173196/11654638"
+                    target="_blank"><img src="img/libros/estuche_hp.png" alt="estuche_hp" title="Saga completa"></a>
+
+                <a class="grupo1" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-estuche-con-harry-potter-y-la-piedra-filosofal-harry-potter-y-la-camara-secreta-harry-potter-y-el-prisionero-de-azkaban/9788418796180/12979049"
+                    target="_blank"><img src="img/libros/estuche3libros_hp.png"
+                        alt="estuche de los tres primeros libros" title="Tres primeros libros"></a>
+
+                <!-- GRUPO PARA LAS EDICIONES ESPECIALES -->
+
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-la-piedra-filosofal-edicion-gryffindor-20-anos-de-magia/9788498388879/8284617"
+                    target="_blank"><img src="img/libros/libro1_gry_hp.jpg"
+                        alt="libro-harry-potter-y-la-piedra-filosofal-edicion-gryffindor-20-anos-de-magia"
+                        title="Harry Potter y la Piedra Filosofal"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-la-camara-secreta-edicion-hufflepuff/9788498389739/10082967"
+                    target="_blank"><img src="img/libros/libro2_huff_hp.jpg"
+                        alt="libro-harry-potter-y-la-camara-secreta-edicion-hufflepuff"
+                        title="Harry Potter y la camara secreta"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-el-prisionero-de-azkaban-edicion-slytherin-del-20-aniversario-harry-potter-3/9788418174094/11735152"
+                    target="_blank"><img src="img/libros/libro3_sly_hp.jpg"
+                        alt="libro-harry-potter-y-el-prisionero-de-azkaban-edicion-slytherin-del-20-aniversario-harry-potter"
+                        title="Harry Potter y el prisionero de Azkaban"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-el-caliz-de-fuego-edicion-ravenclaw-del-20-anive-rsario-harry-potter-4/9788418174384/12328239"
+                    target="_blank"><img src="img/libros/libro4_rav_hp.jpg"
+                        alt="libro-harry-potter-y-el-caliz-de-fuego-edicion-ravenclaw-del-20-anive-rsario-harry-potter"
+                        title="Harry Potter y el caliz de fuego"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-la-orden-del-fenix-edicion-gryffindor-del-20-aniversario-harry-potter/9788418174605/12480889"
+                    target="_blank"><img src="img/libros/libro5_gry_hp.jpg"
+                        alt="libro-harry-potter-y-la-orden-del-fenix-edicion-gryffindor-del-20-aniversario-harry-potter"
+                        title="Harry Potter y la orden del fenix"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-el-misterio-del-principe-20-aniversario/9788418637971/12990043"
+                    target="_blank"><img src="img/libros/libro6_huff_hp.jpg"
+                        alt="libro-harry-potter-y-el-misterio-del-principe-20-aniversario"
+                        title="Harry Potter y el misterio del príncipe"></a>
+
+                <a class="grupo2" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-las-reliquias-de-la-muerte-edicion-slytherin-del-20-aniversario-harry-potter-7/9788418797033/13203154"
+                    target="_blank"><img src="img/libros/libro7_sly_hp.jpg"
+                        alt="libro-harry-potter-y-las-reliquias-de-la-muerte-edicion-slytherin-del-20-aniversario-harry-potter"
+                        title="Harry Potter y las reliquias de la muerte"></a>
+
+                <!-- GRUPO PARA LIBROS DE ANIMALES FANTÁSTICOS -->
+
+
+                <a class="grupo3" style="display:none;"
+                    href="https://www.casadellibro.com/libro-animales-fantasticos-y-donde-encontrarlos-guion-original-de-la-pelicula/9788498387902/4782750"
+                    target="_blank"><img src="img/libros/tapaDura/animales_fantasticos_y _donde_encontrarlos.jpg"
+                        alt="animales_fantasticos_y_donde_encontrarlos"></a>
+
+                <a class="grupo3" style="display:none;"
+                    href="https://www.casadellibro.com/libro-animales-fantasticos-y-donde-encontrarlos/9788498387940/5199271"
+                    target="_blank">
+                    <img src="img/libros/tapaDura/animales_fantasticos_y _donde_encontrarlos2.jpg"
+                        title="edición actualizada con un prólogo de Newt (6 animales desconocidos para muggles)"
+                        alt="camara_secreta"></a>
+
+                <a class="grupo3" style="display:none;"
+                    href="https://www.casadellibro.com/libro-animales-fantasticos-los-crimenes-de-grindelwald/9788498389081/8284624"
+                    target="_blank"><img src="img/libros/tapaDura/ANIMALES_FANTASTICOS_LOS_CRIMENES_DE_GRINDELWALD.jpg"
+                        alt="ANIMALES FANTASTICOS: LOS CRIMENES DE GRINDELWALD"></a>
+
+                <a class="grupo3" style="display:none;"
+                    href="https://www.casadellibro.com/libro-animales-fantasticos-los-crimenes-de-grindelwald-guia/9788893675437/8515482"
+                    target="_blank"><img
+                        src="img/libros/tapaBlanda/ANIMALES_FANTASTICOS_LOS_CRIMENES_DE_GRINDELWALD_GUIA.jpg"
+                        title="Tapa Blanda" alt="ANIMALES_FANTASTICOS_LOS_CRIMENES_DE_GRINDELWALD_GUIA"></a>
+
+                <a class="grupo3" style="display:none;"
+                    href="https://www.casadellibro.com/libro-los-crimenes-de-grindelwald-el-libro-magico/9788893675413/8515483"
+                    target="_blank"><img src="img/libros/tapaBlanda/LOS_CRÍMENES_DE_GRINDELWALD_EL_LIBRO_MAGICO.jpg"
+                        title="Tapa Blanda" alt="LOS_CRÍMENES_DE_GRINDELWALD_EL_LIBRO_MAGICO"></a>
+
+
+                <a class="grupo3" style="display:none;"
+                    href="https://www.casadellibro.com/libro-cine-magico-4-animales-fantasticos-los-crimenes-de-grindelwald/9788467933581/8472814"
+                    target="_blank"><img
+                        src="img/libros/tapaDura/CINE_MAGICO 4_ANIMALES_FANTASTICOS_LOS_CRIMENES_DE_GRINDELWALD.jpg"
+                        alt="CINE MAGICO 4 ANIMALES_FANTASTICOS_LOS_CRIMENES_DE_GRINDELWALD"></a>
+
+                <!-- GRUPO PARA  LIBROS EXTRAS -->
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-de-la-pagina-a-la-pantalla-el-viaje-cinematografico-completo/9788467933352/8472813"
+                    target="_blank"><img src="img/libros/tapaDura/DE_LA_PAGINA_A_LA_PANTALLA.jpg"
+                        alt="HARRY POTTER: DE LA PAGINA A LA PANTALLA: EL VIAJE CINEMATOGRAFICO COMPLETO"
+                        title="EL VIAJE CINEMATOGRAFICO COMPLETO"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-los-archivos-de-las-peliculas-8-la-orden-del-fenix-y-las-fuerzas-oscuras/9788467939736/11603430"
+                    target="_blank"><img
+                        src="img/libros/HARRY POTTER LOS ARCHIVOS DE LAS PELICULAS 8 LA ORDEN DEL FENIX Y LAS FUERZAS OSCURAS.jpg"
+                        alt="HARRY POTTER: LOS ARCHIVOS DE LAS PELICULAS 8: LA ORDEN DEL FENIX Y LAS FUERZAS OSCURAS"
+                        title="otros"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-noticias-del-mundo-magico/9788491393023/6866800"
+                    target="_blank"><img src="img/libros/tapaBlanda/NOTICIAS DEL MUNDO MAGICO.jpg"
+                        alt="NOTICIAS DEL MUNDO MAGICO" title="Tapa Blanda"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-criaturas-un-album-de-escenas-de-papel/9788467933024/8472812"
+                    target="_blank"><img src="img/libros/tapaDura/UN ALBUM DE ESCENAS DE PAPEL.jpg"
+                        alt="HARRY POTTER: CRIATURAS: UN ALBUM DE ESCENAS DE PAPEL" title="Tapa Dura"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-luces-camara-magia-como-se-hizo-los-crimenes-de-grindelwald/9788491393221/7689793"
+                    target="_blank"><img src="img/libros/tapaBlanda/¡LUCES, CAMARA, MAGIA!.jpg"
+                        alt="¡LUCES, CAMARA, MAGIA!"></a>
+
+                <a class="grupo4" style="display:none;"
+                    href="https://www.casadellibro.com/libro-harry-potter-y-el-legado-maldito/9788498387544/3087587"
+                    target="_blank"><img src="img/libros/tapaBlanda/Harry Potter y el legado maldito.jpg"
+                        alt="Harry Potter y el legado maldito"></a>
+
+
+
+            </div>
+        </article>
+        <article class="peliculas">
+            <div class="tipo">
+
+                <img class="iconoUno" src="img/libros/peli/icono_pelicula.png">
+                <p>Películas</p>
+                <img class="iconoDos" src="img/libros/peli/icono_pelicula.png">
+
+                <!-- BOTÓN PARA OCULTAR O MOSTRAR LAS PELÍCULAS OFICIALES-->
+
+                <button class="of_2" onclick="mostrarElementos('grupo5')">
+                    <h2>Oficiales</h2>
+                </button>
+
+                <!-- BOTÓN PARA OCULTAR O MOSTRAR LAS PELÍCULAS DE ANIMALES FANTÁSTICOS-->
+
+                <button class="animales" onclick="mostrarElementos('grupo8')">
+                    <h2>Animales Fantásticos</h2>
+                </button>
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS DVD-->
+
+                <button class="dvd" onclick="mostrarElementos('grupo6')">
+                    <h2>DVD</h2>
+                </button>
+            </div>
+            <div class="portadas">
+
+                <!-- GRUPO PARA TODAS LAS PELÍCULAS OFICIALES DE LA SAGA PRINCIPAL -->
+
+                <a class="grupo5" href="peli1_hp.html" target="_blank"><img
+                        src="img/libros/peli/piedra_filosofal_peli.jpg" alt="piedra_filosofal"></a>
+
+                <a class="grupo5" href="peli2_hp.html" target="_blank">
+                    <img src="img/libros/peli/camara_secreta_peli.jpg" alt="camara_secreta"></a>
+
+                <a class="grupo5" href="peli3_hp.html" target="_blank"><img
+                        src="img/libros/peli/el prisionero de azkaban_peli.jpg" alt="prisionero_de_azkban"></a>
+
+                <a class="grupo5" href="peli4_hp.html" target="_blank"><img
+                        src="img/libros/peli/harry-potter-y-el-caliz-de-fuego.jpg" alt="caliz_de_fuego"></a>
+
+                <a class="grupo5" href="peli5_hp.html" target="_blank"><img
+                        src="img/libros/peli/la orden del fenix_peli.jpg"
+                        alt="libro-harry-potter-y-la-orden-del-fenix"></a>
+
+                <a class="grupo5" href="peli6_hp.html" target="_blank"><img
+                        src="img/libros/peli/el misterio del principe_peli.jpeg" alt="misterio_del_principe"></a>
+
+                <a class="grupo5" href="peli7_hp.html" target="_blank"><img
+                        src="img/libros/peli/las reliquias de la muerte parte uno_peli.jpg"
+                        alt="reliquias_de_la_muerte"></a>
+
+                <a class="grupo5" href="peli8_hp.html" target="_blank"><img
+                        src="img/libros/peli/las reliquias de la muerte parte dos_peli.jpg"
+                        alt="reliquias_de_la_muerte"></a>
+
+
+
+                <!-- GRUPO PARA LAS PELÍCULAS DE ANIMALES FANTÁSTICOS -->
+
+                <a class="grupo8" style="display:none;" href="peli9_hp.html" target="_blank"><img
+                        src="img/libros/peli/animales_fantasticos_y _donde_encontrarlos.jpg"
+                        alt="animales_fantasticos_y_donde_encontrarlos"
+                        title="animales fantasticos y donde encontrarlos"></a>
+
+                <a class="grupo8" style="display:none;" href="peli10_hp.html" target="_blank"><img
+                        src="img/libros/peli/los_crimenes_de_grindelwald.jpg" alt="Edición coleccionista"
+                        title="Animales fantásticos: los crimenes de Grindelwald"></a>
+
+                <a class="grupo8" style="display:none;" href="peli11_hp.html" target="_blank"><img
+                        src="img/libros/peli/los_secretos_de_dumbledore.jpg" alt="Edición coleccionista"
+                        title="Animales fantásticos: los secretos de Dumbledore"></a>
+
+                <!-- GRUPO PARA LOS DVD -->
+
+                <a class="grupo6" style="display:none;"
+                    href="https://www.amazon.es/Harry-Potter-Colecci%C3%B3n-Completa-Ed19/dp/B07XW8DX2C/ref=sr_1_1?adgrpid=113931187332&gclid=Cj0KCQiAo-yfBhD_ARIsANr56g70IN9Hb7WgrJiHSS29bVGP-b2muLCTvOMfUVcoOIGy5__D8VwE_-YaAh3fEALw_wcB&hvadid=462963837038&hvdev=c&hvlocphy=1005421&hvnetw=g&hvqmt=e&hvrand=12470863134384006579&hvtargid=kwd-321352838798&hydadcr=6836_1813628&keywords=comprar+peliculas+harry+potter&qid=1677427564&sr=8-1"
+                    target="_blank"><img src="img/libros/peli/Pack Harry Potter Colección Completa [DVD].png"
+                        alt="Colección Completa DVD"></a>
+
+                <a class="grupo6" style="display:none;"
+                    href="https://www.amazon.es/Harry-Potter-G-CollectorS-Italia/dp/B083YK41D5/ref=sr_1_4?adgrpid=51635703290&gclid=Cj0KCQiAo-yfBhD_ARIsANr56g5452fB5cpf9km05PvmUPcNnjE5Jrxey7YAr0p8Wm3GS3keohIIcEkaArPFEALw_wcB&hvadid=601179273544&hvdev=c&hvlocphy=1005421&hvnetw=g&hvqmt=e&hvrand=3171018848906178386&hvtargid=kwd-321352837438&hydadcr=6767_2271094&keywords=colecci%C3%B3n+harry+potter+dvd&qid=1677433426&sr=8-4"
+                    target="_blank"><img src="img/libros/peli/Harry_Potter_M.A.G.O._dvd.png"
+                        alt="Edición coleccionista"></a>
+
+
+            </div>
+        </article>
+        <article class="comics">
+            <div class="tipo largo">
+                <img class="iconoUno" src="img/libros/comic/icono_comic.png">
+                <p>Versiones Ilustradas / Comics</p>
+                <img class="iconoDos" src="img/libros/comic/icono_comic.png">
+
+                <!-- BOTÓN PARA OUCLTAR O MOSTRAR LOS LIBROS OFICIALES-->
+
+                <button class="of_3" onclick="mostrarElementos('grupo7')">
+                    <h2>Oficiales</h2>
+                </button>
+
+            </div>
+            <div class="portadas">
+
+                <a class="grupo7"
+                    href="https://www.amazon.es/Harry-Potter-Colecci%C3%B3n-Completa-1-7-ebook/dp/B01B6RN6J2/ref=sr_1_5?adgrpid=64663932708&gclid=Cj0KCQiAo-yfBhD_ARIsANr56g5WVbuHix5_crCA2QNN689rlva1tX0AvSA8aqU7DJUc36V45e8I5GgaAmReEALw_wcB&hvadid=601232462040&hvdev=c&hvlocphy=1005421&hvnetw=g&hvqmt=e&hvrand=14114618783425789773&hvtargid=kwd-298763656502&hydadcr=851_2606212&keywords=harry+potter+comic&qid=1677434561&sr=8-5"
+                    target="_blank"><img src="img/libros/comic/Harry Potter La Colección Completa (1-7).jpg"
+                        alt="Harry Potter: La Colección Completa (1-7)"
+                        title="Harry Potter: La Colección Completa (1-7) Versión Kindle"></a>
+
+                <a class="grupo7"
+                    href="https://www.casadellibro.com/libro-el-gran-libro-de-las-criaturas-de-harry-potter/9788467916898/2401141"
+                    target="_blank">
+                    <img src="img/libros/comic/EL GRAN LIBRO DE LAS CRIATURAS DE HARRY POTTER.jpg"
+                        alt="gran libro de los lugares mágicos" title="gran libro de los lugares mágicos"></a>
+
+                <a class="grupo7"
+                    href="https://www.casadellibro.com/libro-el-gran-libro-de-los-artefactos-de-harry-potter/9788467923131/3114539"
+                    target="_blank"><img src="img/libros/comic/EL GRAN LIBRO DE LOS ARTEFACTOS DE HARRY POTTER.jpg"
+                        alt="EL GRAN LIBRO DE LOS ARTEFACTOS DE HARRY POTTER"
+                        title="EL GRAN LIBRO DE LOS ARTEFACTOS DE HARRY POTTER"></a>
+
+                <a class="grupo7"
+                    href="https://www.casadellibro.com/libro-el-gran-libro-de-los-lugares-magicos-de-harry-potter/9788467919011/2582793"
+                    target="_blank"><img src="img/libros/comic/EL GRAN LIBRO DE LOS LUGARES MAGICOS.jpg"
+                        alt="EL GRAN LIBRO DE LOS LUGARES MAGICOS DE HARRY POTTER"
+                        title="EL GRAN LIBRO DE LOS LUGARES MAGICOS DE HARRY POTTER"></a>
+
+                <a class="grupo7"
+                    href="https://www.casadellibro.com/libro-lego-harry-potter-libro-de-posteres/9788417644604/9143358"
+                    target="_blank"><img src="img/libros/comic/Libro de posters lego.jpg"
+                        alt="LEGO HARRY POTTER: LIBRO DE POSTERES" title="LEGO HARRY POTTER: LIBRO DE POSTERES"></a>
+
+
+            </div>
+        </article>
+    </main>
+    <footer>
+     <a href="aviso_legal.html"><p>Aviso Legal</p></a>
+        <a href="registro.html"><p>iniciar sesion</p></a>
+        <ul>
+            <li style="--clr:#914EFF">
+                <a href="inicio_hp.html" data-text="&nbsp;HarryPotter">&nbsp;Harry Potter&nbsp;</a>
+            </li>
+            <li style="--clr:#93DDA5">
+                <a href="inicio_sa.html" data-text="&nbsp;SeñorDeLosAnillos">&nbsp;Señor de los anillos&nbsp;</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+
+        function mostrarElementos(clase) {
+            var elementos = document.getElementsByClassName(clase);
+
+            // Ocultar todos los elementos que no pertenecen al grupo actual
+            var todosLosElementos = document.querySelectorAll('[class*=grupo]');
+            for (var i = 0; i < todosLosElementos.length; i++) {
+                if (!todosLosElementos[i].classList.contains(clase)) {
+                    todosLosElementos[i].style.display = "none";
+                }
+            }
+
+            // Mostrar u ocultar los elementos del grupo actual
+            for (var i = 0; i < elementos.length; i++) {
+                if (elementos[i].style.display === "none") {
+                    elementos[i].style.display = "block";
+                } else {
+                    elementos[i].style.display = "none";
+                }
+            }
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

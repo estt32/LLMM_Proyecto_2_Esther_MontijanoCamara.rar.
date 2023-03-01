@@ -1,0 +1,41 @@
+header .titulo img {
+    height: 55px;
+}
+
+header .titulo p {
+    margin-top: 10px;
+}
+
+main {
+    margin: 30px;
+    color: #54A9BB;
+    column-gap: 10px;
+}
+
+main p,
+main div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    column-gap: 10px;
+}
+
+footer a p:hover,
+a {
+    text-decoration: none;
+}
+
+/* cuando se pase por encima de los apartados del footer, excepto el último, se harán un poco más grandes */
+
+footer a:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}

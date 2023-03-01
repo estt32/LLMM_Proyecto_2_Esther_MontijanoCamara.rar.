@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 14% 97% 3%;
+    row-gap: 50px;
+
+    /* fondo con degradado */
+
+    background: rgb(34, 21, 11);
+    background: linear-gradient(0deg, rgba(34, 21, 11, 1) 0%, rgba(222, 206, 188, 1) 65%);
+    background-attachment: fixed;
+}
+
+main {
+    margin-left: 15px;
+    font-family: bluu_nextbold, Crimson Text, serif;
+}
+
+.tipo {
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: repeat(5, 20%);
+    column-gap: 5px;
+    align-items: end;
+    justify-items: center;
+}
+
+.largo {
+    grid-template-columns: 25% 10% 30% 10% 10% 25%;
+}
+
+
+
+.iconoUno {
+    grid-column: 2/3;
+}
+
+.iconoDos {
+    grid-column: 4/5;
+}
+
+.tipo p {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 20px;
+    color: #22150B;
+    font-size: 30px;
+    text-align: center;
+}
+
+.tipo img {
+    grid-row: 1/2;
+    width: 80px;
+    height: 80px;
+}
+/* BOTONES */
+
+/* OFICIALES NUMERO TRES (DEL SEGUNDO APARTADO) */
+
+.of_2 {
+    grid-column: 2/3;
+}
+
+.dvd {
+    grid-column: 3/4;
+}
+
+/* OFICIALES NUMERO TRES (DEL TERCER APARTADO) */
+
+.of_3 {
+    grid-column: 3/4;
+}
+
+.portadas {
+    margin-top: 2%;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portadas button {
+    display: grid;
+    align-items: start;
+}
+
+.portadas img {
+    height: 250px;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.771));
+}
+
+.peliculas,
+.comics {
+    margin-top: 5%;
+}
+
+article button {
+    grid-row: 2/3;
+    height: 50px;
+    border: #22150B 1px solid;
+    border-radius: 20%;
+}
+
+/* cuando el botón está activo se rota 10 grados */
+
+article button:active {
+    transform: rotate(10deg);
+}
+
+article button:hover {
+    color: #DECEBC;
+    background-color: #22150B;
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 97% 3%;
+        row-gap: 50px;
+
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .tipo img {
+        display: none;
+    }
+    .portadas img{
+        height: 180px;
+    }
+
+    .largo {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .tipo p {
+        grid-column: 2/5;
+    }
+
+    .of_3 {
+        grid-column: 2/3;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 12% 85% 3%;
+        row-gap: 50px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .tipo {
+        text-align: center;
+    }
+
+    .largo {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .tipo .iconoUno {
+        grid-column: 1/2;
+    }
+
+    .tipo .iconoDos {
+        grid-column: 5/6;
+    }
+
+    .largo .iconoDos {
+        grid-column: 3/4;
+    }
+
+    .tipo p {
+        grid-column: 2/5;
+    }
+
+    .of_3 {
+        grid-column: 2/3;
+    }
+
+
+    .largo p {
+        grid-column: 2/3;
+    }
+
+}
