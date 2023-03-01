@@ -34,9 +34,10 @@ header .titulo img {
 header .titulo {
     height: 50px;
     background-color: #22150B;
-    font-size: 50px;
+    font-size: 45px;
     display: grid;
     grid-template-columns: 15% 80%;
+    margin-botton:5px;
 }
 
 /* MENU */
@@ -59,7 +60,7 @@ nav button img {
 nav h1,
 nav p {
     margin-top: -4px;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
     text-decoration: none;
     color: #22150B;
@@ -355,7 +356,7 @@ footer {
 }
 
 footer p {
-    font-size: 22px;
+    font-size: 15px;
     color: #DECEBC;
     letter-spacing: 2px;
 }
@@ -366,7 +367,7 @@ footer p:hover {
 
 ul {
     grid-column: 3/4;
-    font-size: 22px;
+    font-size: 12px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -599,14 +600,14 @@ a:hover{
     }
 
     footer p {
-        font-size: 22px;
+        font-size: 15px;
         color: #DECEBC;
         letter-spacing: 2px;
     }
 
     ul {
         grid-column: 3/4;
-        font-size: 20px;
+        font-size: 12px;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -833,14 +834,14 @@ a:hover{
     }
 
     footer p {
-        font-size: 22px;
+        font-size: 15px;
         color: #DECEBC;
         letter-spacing: 2px;
     }
 
     ul {
         grid-column: 3/4;
-        font-size: 20px;
+        font-size: 12px;
         position: relative;
         display: flex;
         flex-direction: column;
