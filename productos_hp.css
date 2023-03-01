@@ -35,7 +35,7 @@ article button {
     margin: 10px;
     height: 50px;
     width: 120px;
-    font-size: 30px;
+    font-size: 18px;
     border: #22150B solid 1px;
 }
 
@@ -85,7 +85,7 @@ button:hover {
 .titulo {
     font-family: 'Anton', sans-serif;
     font-family: 'Carter One', cursive;
-    font-size: 50px;
+    font-size: 45px;
     color: #22150B;
     font-weight: 300;
     text-align: left;
@@ -94,11 +94,11 @@ button:hover {
 
 
 .sub {
-    font-size: 35px;
+    font-size: 25px;
     text-shadow: none;
 }
 h1{
-    font-size: 50px;
+    font-size: 45px;
 }
 
 input {
@@ -106,43 +106,6 @@ input {
     font-weight: 700;
 }
 
-.buscador {
-    position: relative;
-    width: 45px;
-    height: 45px;
-    padding: 10px;
-    transition-duration: 500ms;
-    cursor: pointer;
-    font-size: 18px;
-    color: transparent;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 50%;
-    overflow: hidden;
-    background-image: url(img/icono_buscador_varita.png);
-    background-color: #decebcb3;
-    background-repeat: no-repeat;
-    background-size: 22px;
-    background-position: center;
-}
-
-.buscador:hover {
-    border: 1px solid #22150B;
-}
-
-.buscador:focus {
-    width: 300px;
-    height: 30px;
-    cursor: text;
-    padding-left: 40px;
-    color: #4c3320;
-    outline: none;
-    background-color: transparent;
-    border: 2px solid #22150B;
-    border-radius: 2%;
-    background-color: transparent;
-    background-size: 22px;
-    background-position: 10px 50%;
-}
 
 /* PRODUCTOS */
 
@@ -161,7 +124,6 @@ input {
 .producto {
     grid-row: 1/2;
     height: 180px;
-
 
 }
 
