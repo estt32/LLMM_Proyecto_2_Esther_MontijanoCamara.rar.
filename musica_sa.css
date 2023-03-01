@@ -15,7 +15,8 @@ main {
 
 main h1 {
     grid-column: 1/3;
-    font-family: 'Ringbearer';
+    font-family: 'Anton', sans-serif;
+    font-family: 'Carter One', cursive;
     color: #0b2212;
     text-align: center;
 }
