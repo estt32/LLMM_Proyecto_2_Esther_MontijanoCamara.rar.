@@ -14,7 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="inicio_sa.css">
     <link rel="stylesheet" href="loc_sa.css">
-    <title>Harry Potter - Inicio</title>
+    <title>El Señor de los Aninllos - Localizaciones</title>
 </head>
 
 <body>
@@ -84,7 +84,7 @@
 
         <div class="titulos">
             
-            <p>Señor de los Anillos</p>
+            <p>El Señor de los Anillos</p>
             
         </div>
         <div class="tour">
@@ -200,14 +200,15 @@
     </footer>
 
     <script>
-
+// para el buscador
+        //variables
         const input = document.getElementById('busqueda');
         const main = document.querySelector('main');
         const articulos = main.querySelectorAll('article');
-
+// convertimos lo que se introduce a minúsculas
         input.addEventListener('input', () => {
             const query = input.value.toLowerCase();
-
+// compara si contiene o no el nombre que se ha introducido
             articulos.forEach(articulo => {
                 if (articulo.classList.contains(query)) {
                     articulo.style.display = 'block';
