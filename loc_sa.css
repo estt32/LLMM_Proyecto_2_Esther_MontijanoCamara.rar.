@@ -13,16 +13,14 @@ header {
 }
 
 header .titulo p {
-    font-family: 'Crayonest';
-    font-style: normal;
-    font-weight: 100;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Carter One', cursive;
 }
 
 nav h1,
 nav p {
-    font-family: 'Crayonest';
-    font-style: normal;
-    font-weight: 100;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Carter One', cursive;
 }
 
 
@@ -48,7 +46,7 @@ main {
 
 label {
 
-    font-family: 'Ringbearer';
+    font-family: 'Cinzel Decorative', cursive;
     color: #253529;
     font-size: 40px;
     -webkit-text-stroke: #253529 solid 2px;
