@@ -15,7 +15,8 @@ main {
 
 main h1 {
     grid-column: 1/3;
-    font-family: 'Magic School One';
+    font-family: 'Anton', sans-serif;
+    font-family: 'Carter One', cursive;
     color: #22150B;
     text-align: center;
 }
