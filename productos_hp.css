@@ -10,6 +10,9 @@ main {
     justify-items: center;
     margin: 5px;
 }
+p{
+    margin:0;
+}
 
 main h1 {
     grid-row: 1/2;
@@ -94,7 +97,7 @@ button:hover {
 
 
 .sub {
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: none;
 }
 h1{
